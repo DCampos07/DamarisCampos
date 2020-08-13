@@ -126,7 +126,41 @@ header nav ul {
   }
 /* BIO ENDS */
 
-  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */  
+/* PORTFOLIO GRID */
+.portfolio-grid-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center
+ }
+
+.portfolio-grid-container {
+  max-width: 940px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  grid-gap: 10px;
+}
+.grid-container {
+  grid-gap: <grid-row-gap> <grid-column-gap>;
+ }
+
+ .portfolio-grid-item {
+  background-color: white;
+  border: solid;
+  padding: 1em;
+  color: black;
+}
+
+.box1 {
+  grid-column-start: 1; 
+  grid-column-end: 2; 
+  grid-row-start: 1; 
+  grid-row-end: 3; 
+}
+
+/* PORTFOLIO GRID ENDS */
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */  
 }
 @media screen and (max-width: 575px) {
 
