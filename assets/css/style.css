@@ -53,11 +53,12 @@ header nav ul {
   .hero {
     background-image: url('../images/hero.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
+    height: 500px;
   }
   
   .hero-cta {
@@ -80,7 +81,7 @@ header nav ul {
     margin: 50px;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid #39a6b2;
+    border-bottom: 2px solid #39a6b2;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -91,15 +92,16 @@ header nav ul {
     line-height: 1.7;
     color: #023055;
     width: 80%;
-    font-size: 20px;
+    font-size: 16px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     flex: 12;
 }
 .bio-img {
     flex: 1 12%;
     margin-right: 20px;
     max-width: 100%;
+    font-size: 6px;
 }
 .bio-info {
     flex: 2 70%;
@@ -107,14 +109,13 @@ header nav ul {
     flex-wrap: wrap;
     align-items: center;
 }
-.step h3 {
-    font-size: 46px;
+.bio h3 {
+    font-size: 43px;
     flex: 1 30%;
 }
-.step-text p {
-    font-size: 18px;
-}
 .section-title {
+    font-size: 43px;
+    flex: 1 30%;
     border-bottom: 3px;
     padding: 20px;
     text-align: center;
@@ -134,12 +135,14 @@ header nav ul {
  }
 
 .portfolio-grid-container {
-  max-width: 940px;
+  width: 80%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 100px);
   grid-gap: 10px;
+  color: #023055;
+  font-size: 1.2rem;
 }
 .grid-container {
   grid-gap: <grid-row-gap> <grid-column-gap>;
@@ -220,7 +223,7 @@ header nav ul {
       flex: 100%;  
     }
   }
-
+  /* MEDIA QUERY FOR SMALLER SCREENS */
   @media screen and (max-width: 980px) {
     header {
       padding-bottom: 0;
@@ -267,4 +270,4 @@ header nav ul {
       flex: 1 100%;
     }
   }
-  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER ENDS*/
+  /* MEDIA QUERY FOR SMALLER SCREENS ENDS*/
