@@ -16,6 +16,13 @@ header {
     padding: 20px 35px;
     justify-content: space-between;
     flex-wrap: wrap; 
+    top: 0;
+    background-image: url('../images/hero.jpg');
+    opacity: .8;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
 }
 
 header h1 {
@@ -23,6 +30,7 @@ header h1 {
     font-size: 55px;
     color: #0079db;
     margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
@@ -46,14 +54,23 @@ header nav ul {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
+  
+  header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
+  }
+  
 /* HEADER ENDS*/
 
 /* HERO */
   .hero {
     background-image: url('../images/hero.jpg');
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     display: flex;
     justify-content: right;
     flex-wrap: wrap;
@@ -69,50 +86,66 @@ header nav ul {
     color: #0079db;
     font-size: 18px;
     line-height: 1.2;
-    background-color: ;
   }
 
   .hero-text {
     font-style: italic;
     font-size: 36px;
+    background-color:  rgb(252,225,56, .9)
   }
 /* HERO ENDS */
 
 /* BIO */
 .bio {
-  max-width: 100%;
+  margin: 50px;
   padding-bottom: 50px;
-  align-items: center;
- }
-
- .section-title {
-  color: #023055;
-  font-size: 42px;
-  flex: 1 30%;
-  align-items: center;
-  margin: 50px 0 30px 60px;
-  flex-wrap: wrap;
-}
-
-.bio-info {
   width: 80%;
+  border-bottom: 2px solid #39a6b2;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  flex: 2 70%;
-  
 }
+​
 .bio p {
-    line-height: 1.7;
-    color: #023055;
-    width: 50%;
-    font-size: 16px;
-    padding-left: 20%;
-    text-align: left;
-    flex: 12;
+  line-height: 1.7;
+  color: #023055;
+  width: 40%;
+  font-size: 16px;
+  text-align: right;
+  flex: 12;
+}
+.bio-img {
+  flex: 1 12%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  max-width: 100%;
+  font-size: 6px;
+}
+.bio-info {
+  flex: 2 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.bio h3 {
+  font-size: 43px;
+  flex: 1 30%;
+}
+.section-title {
+  font-size: 43px;
+  flex: 1 30%;
+  border-bottom: 3px;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+}
+.secondary-border {
+  border-color: #39a6b2;
 }
 /* BIO ENDS */
+
 
 /* PORTFOLIO GRID */
 .portfolio-grid-wrapper {
@@ -141,6 +174,15 @@ header nav ul {
   justify-content: top;
   align-items: center;
   text-align: left;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.portfolio-grid-item:hover {
+  background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
 }
 
 .portfolio-grid-item:nth-child(3n) {
@@ -158,6 +200,11 @@ header nav ul {
 
 /* CONTACT ME */
 
+
+.contact-form button:hover {
+  color: #fce138;
+  background: #39a6b2;
+}
 
 
 
