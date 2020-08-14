@@ -55,10 +55,11 @@ header nav ul {
     background-size: cover;
     background-position: bottom;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     flex-wrap: wrap;
-    align-items: flex-start;
-    height: 500px;
+    align-items: flex-end;
+    height: 700px;
+    opacity: .5;
   }
   
   .hero-cta {
@@ -68,9 +69,10 @@ header nav ul {
     color: #0079db;
     font-size: 18px;
     line-height: 1.2;
+    background-color: ;
   }
 
-  .hero-cta h2{
+  .hero-text {
     font-style: italic;
     font-size: 36px;
   }
@@ -78,60 +80,45 @@ header nav ul {
 
 /* BIO */
 .bio {
-    margin: 50px;
-    padding-bottom: 50px;
-    width: 80%;
-    border-bottom: 2px solid #39a6b2;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+  max-width: 100%;
+  padding-bottom: 50px;
+  align-items: center;
+ }
+
+ .section-title {
+  color: #023055;
+  font-size: 42px;
+  flex: 1 30%;
+  align-items: center;
+  margin: 50px 0 30px 60px;
+  flex-wrap: wrap;
 }
 
-.bio-text {
+.bio-info {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  flex: 2 70%;
+  
+}
+.bio p {
     line-height: 1.7;
     color: #023055;
-    width: 80%;
+    width: 50%;
     font-size: 16px;
-    margin: 0 auto;
+    padding-left: 20%;
     text-align: left;
     flex: 12;
 }
-.bio-img {
-    flex: 1 12%;
-    margin-right: 20px;
-    max-width: 100%;
-    font-size: 6px;
-}
-.bio-info {
-    flex: 2 70%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.bio h3 {
-    font-size: 43px;
-    flex: 1 30%;
-}
-.section-title {
-    font-size: 43px;
-    flex: 1 30%;
-    border-bottom: 3px;
-    padding: 20px;
-    text-align: center;
-    margin: 0 auto 35px auto;
-    width: 50%;
-}
-.secondary-border {
-    border-color: #39a6b2;
-  }
 /* BIO ENDS */
 
 /* PORTFOLIO GRID */
 .portfolio-grid-wrapper {
   display: flex;
   width: 100%;
-  justify-content: center
+  justify-content: center;
  }
 
 .portfolio-grid-container {
@@ -143,26 +130,37 @@ header nav ul {
   grid-gap: 10px;
   color: #023055;
   font-size: 1.2rem;
+  grid-auto-flow: dense;
 }
-.grid-container {
-  grid-gap: <grid-row-gap> <grid-column-gap>;
- }
 
  .portfolio-grid-item {
-  background-color: white;
+  display: flex;
   border: solid;
   padding: 1em;
   color: black;
+  justify-content: top;
+  align-items: center;
+  text-align: left;
+}
+
+.portfolio-grid-item:nth-child(3n) {
+  grid-column: 2;
 }
 
 .box1 {
   grid-column-start: 1; 
-  grid-column-end: 2; 
+  grid-column-end: 3; 
   grid-row-start: 1; 
   grid-row-end: 3; 
+  back
 }
-
 /* PORTFOLIO GRID ENDS */
+
+/* CONTACT ME */
+
+
+
+
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */  
 }
 @media screen and (max-width: 575px) {
