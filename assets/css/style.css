@@ -137,7 +137,7 @@ header nav ul {
     justify-content: space-between;
   }
   .portfolio h2 {
-    float: left;
+    float: center;
   }
 
   .portfolio-grid-wrapper {
@@ -287,11 +287,15 @@ header nav ul {
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(102, 27, 68, 0.459);
   }
+/* CONTACT ME ENDS */
 
 /* UTILITIES */
   .flex-row {
     display: flex;
 }
+  .flex-graph {
+    display: flexbox;
+  }
 
 /* SECTION TITLE STYLES START */
   .section-title {
@@ -313,35 +317,26 @@ header nav ul {
       border-color: #39a6b2;
     }
 
-  
-  /* padding: 60px */
-/* } */
-
-
-.border {
-  border-color: var(--primary-color);
-}
+  .border {
+    border-color: var(--primary-color);
+  }
 
 
 /* SECTION TITLE STYLES END */
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */  
-}
 @media screen and (max-width: 575px) {
-
-    .hero-form button {
-      width: 100%;
-    }
   
-    .section-title {
+  
+  .section-title {
       width: 95%;
     }
   
-    .intro p {
+    .bio p {
       width: 100%;
     }
   
-    .trainer {
+    .bio-info {
       flex: 0 100%;
     }
   
@@ -361,11 +356,6 @@ header nav ul {
   @media screen and (max-width: 768px) {
     section {
       padding: 30px 15px;
-    }
-  
-    .step h3 {
-      flex: 1 100%;
-      text-align: center;
     }
   
     .step-info {
@@ -390,6 +380,7 @@ header nav ul {
     header {
       padding-bottom: 0;
       justify-content: center;
+      position: relative;
     }
   
     header h1 {
@@ -406,15 +397,7 @@ header nav ul {
     header nav ul li a {
       font-size: 20px;
     }
-  
-    footer h2, footer div {
-      text-align: center;
-      width: 100%;
-    }
-  
-    .hero-cta, .hero-form {
-      width: 100%;
-    }
+    
   
     .hero-cta {
       text-align: center;
@@ -424,12 +407,8 @@ header nav ul {
       width: 80%;
     }
     
-    .trainer {
+    .bio, .portfolio, .contact-form {
       flex: 0 70%;
-    }
-    
-    .contact-info iframe{
-      flex: 1 100%;
     }
   }
   /* MEDIA QUERY FOR SMALLER SCREENS ENDS*/
