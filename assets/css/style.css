@@ -124,6 +124,7 @@ header nav ul {
   font-size: 18px;
   justify-content: center;
   text-align: left;
+  margin: 0 auto;
 }
 /* BIO ENDS */
 
@@ -320,24 +321,32 @@ header nav ul {
   .border {
     border-color: var(--primary-color);
   }
-
-
 /* SECTION TITLE STYLES END */
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */  
 @media screen and (max-width: 575px) {
-  
-  
-  .section-title {
+    .header {
+      size: 100%;
+    }
+
+    .section-title {
       width: 95%;
     }
   
-    .bio p {
-      width: 100%;
+    .bio-text {
+      margin-left: 0;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+
+    .bio-img {
+      padding: none;
+      box-sizing: none;
     }
   
     .bio-info {
       flex: 0 100%;
+      width: 80%;
     }
   
     .contact-info {
@@ -374,6 +383,14 @@ header nav ul {
     .step-text {
       flex: 100%;  
     }
+
+    .box-text h3 {
+      font-size: 18px;
+    }
+
+    .box-text h4 {
+      font-size: 16px;
+    }
   }
   /* MEDIA QUERY FOR SMALLER SCREENS */
   @media screen and (max-width: 980px) {
@@ -386,6 +403,7 @@ header nav ul {
     header h1 {
       width: 100%;
       text-align: center;
+      color: var(--secondary-color);
     }
   
     header nav ul {
@@ -395,20 +413,37 @@ header nav ul {
     }
   
     header nav ul li a {
-      font-size: 20px;
+      font-size: 24px;
+    }
+    .hero {
+      height: 300px;
+    }
+    .hero-text {
+      font-size: 28px;
+      width: 40%;
     }
     
-  
-    .hero-cta {
-      text-align: center;
-    }
-  
     .section-title {
       width: 80%;
+      border-color: none;
     }
-    
+
+    .portfolio h2 {
+      text-align: left;
+    }
+  
+  
+    .box-text {
+      font-size: 18px;
+    }
+
     .bio, .portfolio, .contact-form {
       flex: 0 70%;
     }
+  
+    .contact-form nav ul li a {
+      font-size: 20px;
   }
+  }
+
   /* MEDIA QUERY FOR SMALLER SCREENS ENDS*/
