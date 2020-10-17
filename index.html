@@ -1,132 +1,198 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Damaris Campos Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Damaris Campos</title>
+  <!--Foundation CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+    integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
 </head>
-
 <body>
-  <!--HEADER-->
-  <header>
-
-    <h1>
-      <a href="/">
-        Damaris Campos
-      </a>
-    </h1>
-    <nav>
-      <ul>
-        <li>
-          <a href="#about-me">About Me</a>
-        </li>
-        <li>
-          <a href="#work">Work</a>
-        </li>
-        <li>
-          <a href="#contact-me">Contact Me</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero">
-    <h2 class="hero-text"> Watch Me Grow </h2>
-  </section>
-
-  <!--ABOUT ME-->
-  <section id="about-me" class="bio">
-    <div class="flex-row">
-      <h3 class="section-title border">About Me</h3>
-    </div>
-    <div class="bio-info">
-      <div class="bio-img">
-        <img src="./assets/images/profile photo.jpg" alt="Damaris Campos" />
-      </div>
-      <div class="bio-text">
-        <p>
-          My exceptional skills in organization, attention to detail, and flexibility among others make me the perfect
-          full-stack developer for your organization. I am ambitious and always looking for new ways to increase my
-          professional knowledge in order to improve my personal growth. I am self-motivated and can work well either in
-          a team or independently. <br>
-          <br>
-          I love to innovate, play, and have fun with my work. I enjoy being able to use my creative side, and would
-          love to help create the perfect site for you.</p>
-      </div>
-    </div>
-  </section>
-
-
-  <!--PORTFOLIO GRID-->
-  <section id="work" class="portfolio">
-    <div class="flex-graph">
-      <div class="flex-row>">
-        <h2 class="section-title border">Work Portfolio</h2>
-      </div>
-      <div class="portfolio-grid-wrapper">
-        <div class="portfolio-grid-container">
-          <div class="portfolio-grid-item box1 box1-img">
-            <a href="https://github.com/DCampos07/run-buddy.git" target="_blank">
-              <div class="box-text">
-                <h3>Run-Buddy</h3>
-                <h4>HTML/CSS</h4>
-              </div>
-            </a>
-          </div>
-
-          <div class="portfolio-grid-item box2 box2-img">
-            <div class="box-text">
-              <h3>Pastel Puzzels</h3>
-              <h4>MERN Stack</h4>
-            </div>
-
-          </div>
-
-          <div class="portfolio-grid-item box3 box3-img">
-            <div class="box-text">
-              <h3>Surf Report</h3>
-              <h4>MERN Stack</h4>
-            </div>
-          </div>
-
-          <div class="portfolio-grid-item box4 box4-img">
-            <div class="box-text">
-              <h3>Calculator</h3>
-              <h4>React/JavaScript/CSS</h4>
-            </div>
-          </div>
-
-          <div class="portfolio-grid-item box5 box5-img">
-            <div class="box-text">
-              <h3>LED Wall</h3>
-              <h4>Node/loT</h4>
-            </div>
-          </div>
-
+<!--sticky navbar-->
+<header class="sticky-shrinknav-header">
+  <h1 class="sticky-shrinknav-header-title"><img src="assets/images/hero4.jpg"></h1>
+  <ul class="menu align-center sticky-shrinknav-menu">
+    <!--buttons-->
+    <li><button class="btn" href="#">HOME</a></li>
+    <li><button class="btn1" href="#">ABOUT</a></li>
+    <li><button class="btn2" href="#">SERVICES</a></li>
+    <li><button class="btn1" href="#">PORTFOLIO</a></li>
+    <li><button class="btn2" href="#">Contact</a></li>
+  </ul>
+</header>
+    
+  <!--Types of projectss Container Starts-->
+  <section class="five-up-feature ">
+    <div class="five-up-feature-header">
+      <div class="columns">
+        <h2>DAMARIS CAMPOS</h2>
+        <h5><em>I am currently a student at UCF where I am studying to become a Full-Stack Web Developer.<br>
+                This is my profesional portfolio which will be constantly be updated as I learn new skills.</em></h5>
+      </div> <br/>
+    <div class="flex-container row align-spaced">
+      <h2 class="portfolio">Recent Pojects"</h2>
+      <div class="small-5 medium-3 column projects" data-index="">
+        <div class = "selectable search-input">
+          <img class="five-up-feature-image" src="https://www.thecocktaildb.com/images/ingredients/Vodka.png" alt="icon">
+          <h4 class="font">Vodka</h4>
         </div>
+        <p class="font five-up-feature-text">"Vodka is tasteless going down, but it is memorable coming up."</p>
+      </div>
+      <ul class="list-group data-index" id="saved-searches"></ul>
+
+      <div class="small-5 medium-3 column projects" data-index="tequila">
+        <img class="five-up-feature-image" src="https://www.thecocktaildb.com/images/ingredients/Tequila.png"
+          alt="icon">
+        <h4 class="font">Tequila</h4>
+        <p class="five-up-feature-text">“I didn't text you, tequila did”</p>
+        <ul class="list-group data-index" id="saved-searches"></ul>
+      </div>
+      <div class="small-5 medium-3 columns projects" data-index="gin">
+        <img class="five-up-feature-image" src="https://www.thecocktaildb.com/images/ingredients/Gin.png" alt="icon">
+        <h4 class="font">Gin</h4>
+        <p class="five-up-feature-text">"We believe in love at first gin."</p>
+        <ul class="list-group data-index" id="saved-searches"></ul>
+      </div>
+      <div class="small-5 medium-3 columns projects" data-index="scotch">
+        <img class="five-up-feature-image" src="https://www.thecocktaildb.com/images/ingredients/Scotch.png" alt="icon">
+        <h4 class="font">Scotch</h4>
+        <p class="five-up-feature-text">"I started projectsing Scotch just to be a man."</p>
+        <ul class="list-group data-index" id="saved-searches"></ul>
+      </div>
+      <div class="small-5 medium-3 columns projects" data-index="rum">
+        <img class="five-up-feature-image" src="https://www.thecocktaildb.com/images/ingredients/Rum.png" alt="icon">
+        <h4 class="font">Rum</h4>
+        <p class="five-up-feature-text">"Time Flies When You're Having RUM"</p>
+        <ul class="list-group data-index" id="saved-searches"></ul>
       </div>
     </div>
   </section>
+  <!--Types of projectss Container Ends-->
 
-  <!--Contact Me-->
-  <section id="contact-me" class="contact-form">
-    <div class="flex-row">
-      <h2 class="section-title border">Contact Me</h2>
+<!--Cocktails Card Selection Starts-->
+<div class="flex-container row align-spaced">
+  <div class="small-5 medium-3 column projects projects-section"></div>
+</div>
+<!--Cocktails Card Selection Ends-->
+<!--modal-->
+<div class="modal-bg">
+  <div class="modal">
+    <h2>Cocktail-U</h2>
+    <p>Your Home Already!!!</p>
+    <span class="modal-close">X</span>
+  </div>
+</div>
+<div class="modal-bg1">
+  <div class="modal">
+    <h2>About Cocktail-U</h2>
+    <p>Cocktail-U is a website that provides a menu of projectss for the alcohol that you choice in the bar. Have fun! look through our menu and grab your favorite cocktail from your nearest bartender.</p>
+    <span class="modal-close1">X</span>
+  </div>
+</div>
+<div class="modal-bg2">
+  <div class="modal">
+    <h2>Contact Form</h2>
+    <div class="container">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+      </form>
     </div>
-    <nav>
-      <ul>
-        <li> <a href="#">407-799-7456</a></li>
-        <li> <a href="#">dccampos00@gmail.com</a></li>
-        <li> <a href=https://github.com/DCampos07>GitHub</a></li>
-        <li> <a href=https://www.linkedin.com/in/damaris-c-870a1472>LinkedIn</a></li>
-    </nav>
+    <span class="modal-close2">X</span>
+  </div>
+</div>
+
+<!--Footer-->
+<div id="engadget-footer-sitemap-container">
+  <footer id="engadget-footer-sitemap">
+    <div class="links">
+      <div class="link-column">
+        <ul class="menu vertical">
+          <li><a href="#">L</a></li>
+          <li><a href="#">I</a></li>
+          <li><a href="#">V</a></li>
+          <li><a href="#">E</a></li>
+        </ul>
+      </div>
+      <div class="link-column">
+        <ul class="menu vertical">
+          <li><a href="#">Y</a></li>
+          <li><a href="#">O</a></li>
+          <li><a href="#">U</a></li>
+          <li><a href="#">R</a></li>
+        </ul>
+      </div>
+       <div class="link-column">
+        <ul class="menu vertical">
+          <li><a href="#">B</a></li>
+          <li><a href="#">E</a></li>
+          <li><a href="#">S</a></li>
+          <li><a href="#">T</a></li>
+        </ul>
+      </div>
+      <div class="link-column">
+        <ul class="menu vertical">
+          <li><a href="#">L</a></li>
+          <li><a href="#">I</a></li>
+          <li><a href="#">F</a></li>
+          <li><a href="#">E</a></li>
+        </ul>
+      </div>
     </div>
-  </section>
+  </footer>
+</div>
+<div id="engadget-footer-social-container">
+    <footer id="engadget-footer-social">
+        <div class="footer-left">
+            <div class="newsletter">
+                <h6>Sign up for our newsletter</h6>
+                <div class="input-group">
+
+                    <input class="input-group-field" type="email" placeholder="Email address">
+                    <div class="input-group-button">
+                        <input type="submit" class="button" value="Submit">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-right">
+            <h6>Follow us</h6>
+            <img src="https://img.icons8.com/wired/64/000000/facebook-new.png"/>
+            <img src="https://img.icons8.com/wired/64/000000/instagram.png"/>
+            <img src="https://img.icons8.com/ios/50/000000/twitter-squared.png"/>
+            <img src="https://img.icons8.com/dotty/80/000000/gmail-login.png"/>
+        </div>
+    </footer>
+</div>
+<div id="engadget-footer-contact-details-container">
+</div>
 
 
+
+
+<!--JQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+  integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+<script src="./assets/Js/main.js"></script>
 </body>
-
 </html>
